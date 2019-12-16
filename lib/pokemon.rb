@@ -17,8 +17,8 @@ class Pokemon
       db.execute(sql, [name, type])
   end
 
-  def self.find (id, db)  #finds a pokemon from the database by their id number and returns a new Pokemon object
-    pokemon = db.execute("SELECT * FROM pokemon WHERE id=?", [id])
+  def self.find (num, db)  #finds a pokemon from the database by their id number and returns a new Pokemon object
+    pokemon = db.execute("SELECT * FROM pokemon WHERE id=?", [num])
     new_pokemon = self.new(pokemon)
     new_pokemon.id = pokemon[0][0]
     new_pokemon.name = pokemon[0][1]
