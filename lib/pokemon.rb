@@ -21,7 +21,7 @@ class Pokemon
     sql = <<-SQL
      SELECT * FROM pokemon WHERE id = (?);
    SQL
-    new_pokemon = self.new(row[0], row[1], row[2])
+    new_pokemon = self.new(pokemon[0], pokemon[1], pokemon[2])
     new_pokemon.id = pokemon[0][0]
     new_pokemon.name = pokemon[0][1]
     new_pokeman.type = pokemon[0][2]
