@@ -26,6 +26,5 @@ class Pokemon
     new_pokemon.name = row[0][1]
     new_pokeman.type = [0][2]
     return new_pokemon
-  )
   end
 end
