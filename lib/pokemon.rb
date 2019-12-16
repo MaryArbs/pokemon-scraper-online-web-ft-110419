@@ -26,4 +26,3 @@ class Pokemon
     return new_pokemon
   end
 end
-
